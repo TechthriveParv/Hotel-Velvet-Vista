@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL Velvet Vista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/favicons/favicon.ico" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>The Velvet Vista</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <p>The Velvet Vista Hotel & Spa is a family-friendly hotel that offers a wide range of accommodation types,
+                from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Mumbai an
+                unforgettable holiday.</p>
+            <button type="button" class="head-btn">GET STARTED</button>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="checkout.html">Check Out</a></li>
+        </ul>
+        <button class="btn sign-up" onclick="location.href='signup.html'">sign up</button>
+        <button class="btn log-in" onclick="location.href='signin.html'">log in</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-utensils"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Food Service / Food Runner</h2>
+                    <p>The Velvet Vista has variety of multiple cuisines ranging from Thai to Mexican, Italian to Indian.
+                        The Velvet Vista provides 100% pure and hygienic food cooked by world-class chefs.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-swimming-pool"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>The Velvet Vista is well known for the amenities provided: personalized welcome gifts, in-room beer taps, in-room games and many more.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-broom"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>The Housekeeping Department of the Velvet Vista Hotel stands for one motto – ‘Creating a home away
+                        from home’. It maintains utmost standards of cleanliness and quality to ensure a hygienic and pleasant stay.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-door-closed"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>The Room Security of Velvet Vista is well equipped. We provide key card locks to protect our
+                        customers’ privacy. Velvet Vista is best known for its security.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <button type="button" onclick="location.href='book.html'">Book Now</button>
+        </form>
+    </div>
+
+    <!-- Rooms Section -->
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <article class="room">
+                <div class="room-image">
+                    <img src="bedroom 1.jfif" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Comfortable Rooms</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Amazing Beds</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Modern Room Design</li>
+                    </ul>
+                    <p>Comfortable rooms with balcony views. Both AC and Non-AC available.</p>
+                    <p class="rate"><span>$99.00 /</span> Per Night</p>
+                    <button type="button" class="btn" onclick="location.href='signin.html'">book now</button>
+                </div>
+            </article>
+
+            <article class="room">
+                <div class="room-image">
+                    <img src="bedroom 2.jfif" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>2 Bedrooms Luxury Rooms</h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Cozy Beds</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> AC Rooms</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Free Wi-Fi</li>
+                    </ul>
+                    <p>Spacious, clean rooms with cozy beds and 24/7 hot water facility.</p>
+                    <p class="rate"><span>$150.00 /</span> Per Night</p>
+                    <button type="button" class="btn" onclick="location.href='signin.html'">book now</button>
+                </div>
+            </article>
+
+            <article class="room">
+                <div class="room-image">
+                    <img src="bedroom 3.jfif" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Sea-facing Luxury 2 Bedrooms</h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Aesthetic Sea View</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> All Amenities</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i> Free Wi-Fi</li>
+                    </ul>
+                    <p>Sea view rooms with cafeteria, pool and game zone access.</p>
+                    <p class="rate"><span>$170.00 /</span> Per Night</p>
+                    <button type="button" class="btn" onclick="location.href='signin.html'">book now</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>The service here is amazing, staff were polite and friendly. Great stay at this price!</p>
+                    <img src="salman khan.jfif" alt="customer image">
+                    <span>Salman Khan, Kerala</span>
+                </div>
+
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>The rooms were aesthetic. The comfort here feels just like home. Loved staying here!</p>
+                    <img src="karena kapoor.jfif" alt="customer image">
+                    <span>Kareena Kapoor Khan, Goa</span>
+                </div>
+
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>The Velvet Vista is one of the finest hotels in Mumbai. Luxurious rooms and comfort are top-notch.</p>
+                    <img src="sharukh khan.jfif" alt="customer image">
+                    <span>Shahrukh Khan, Mumbai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us</h2>
+                <p>Follow us on Social</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li class="flex">
+                        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="flex">
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>The Velvet Vista, Apollo Bazzar, Colaba, Mumbai, Maharashtra 400001, India</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span>+91 22 2000 8888</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>parvkhichadia@gmail.com<br></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // get elements
+    const navBtn = document.getElementById("nav-btn");
+    const sidenav = document.getElementById("sidenav");
+    const cancelBtn = document.getElementById("cancel-btn");
+    const modal = document.getElementById("modal");
+
+    // open navbar
+    navBtn.addEventListener("click", () => {
+        sidenav.classList.add("show");
+        modal.classList.add("showModal");
+    });
+
+    // close navbar
+    cancelBtn.addEventListener("click", () => {
+        sidenav.classList.remove("show");
+        modal.classList.remove("showModal");
+    });
+
+    // close navbar when clicking outside (on modal)
+    modal.addEventListener("click", () => {
+        sidenav.classList.remove("show");
+        modal.classList.remove("showModal");
+    });
+</script>
+
+</body>
+
+</html>
